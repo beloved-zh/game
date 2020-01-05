@@ -1,33 +1,28 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8" />
+		<meta charset="UTF-8">
 		<title></title>
 	</head>
 	<style type="text/css">
-		#d{
-			width: 500px;
-			height: 500px;
-			background-color: red;
+		#map{
+			width: 60%;
+			height: 60%;
+			margin: 100px auto;
 		}
 	</style>
+	<script src="js/game.js" type="text/javascript" charset="utf-8"></script>	
 	<body>
-		<div id="d">
-			
+		<div align="center" id="map">
+			<canvas id="can" width="100%" height="100%"></canvas>
+			<button onclick="control()" id="b1">开始</button>
+			<br />
+			<br />
+			<br />
+			<button onclick="minusSpeed()" id="b2"><<</button>
+			<span>速度</span>
+			<button onclick="addSpeed()" id="b3">>></button>
 		</div>
-	</body>
-	<script type="text/javascript">
-		window.onkeydown = function(){
-			//alert(event.keyCode);
-			if (event.keyCode == 16) {
-				document.getElementById('d').style.backgroundColor = "yellow";
-			}
-		}
 		
-		window.onkeyup = function(){
-			if (event.keyCode == 16) {
-				document.getElementById('d').style.backgroundColor = "red";
-			}
-		}
-	</script>
+	</body>
 </html>
