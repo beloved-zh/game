@@ -334,6 +334,27 @@ function control(){
 	}
 }
 
+/**
+ * 屏幕控制方向
+ */
+function pmkz(data) {
+	if (snake.direction == 'up' && data != 'down') {
+		snake.direction = data;
+	}
+	if (snake.direction == 'down' && data != 'up') {
+		snake.direction = data;
+	}
+	if (snake.direction == 'right' && data != 'left') {
+		snake.direction = data;
+	}
+	if (snake.direction == 'left' && data != 'right') {
+		snake.direction = data;
+	}
+	// alert(snake.direction);
+	// if (data != snake.direction) {
+	// 	snake.direction = data;
+	// }
+}
 
 /**
  * 加速
